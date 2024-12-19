@@ -1,4 +1,4 @@
-import { Tv, ArrowDown, Watcher } from '@/icons';
+import { Tv, ArrowDown, Watcher, Faces } from '@/icons';
 
 export const REASONS = [
   {
@@ -16,6 +16,12 @@ export const REASONS = [
     title: 'Watch everywhere',
     resume:
       'Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.',
-    icon: Watcher,
+    icon: Watcher(),
+  },
+  {
+    title: 'Create profiles for kids',
+    resume:
+      'Send kids on adventures with their favorite characters in a space made just for them — free with your membership.',
+    icon: Faces(),
   },
 ];
