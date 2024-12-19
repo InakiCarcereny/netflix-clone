@@ -23,7 +23,7 @@ export function Hero() {
 
         <div className="flex flex-col items-center justify-center gap-6 max-w-[600px] w-full mx-auto z-50">
           <div className="flex flex-col items-center gap-2">
-            <h2 className="text-4xl font-bold text-white text-pretty text-center">
+            <h2 className="text-5xl font-bold text-white text-pretty text-center">
               Unlimited movies, TV shows, and more
             </h2>
             <span className="text-white">
@@ -53,7 +53,7 @@ export function Hero() {
 
       <div className="absolute bg-black bg-opacity-90 w-full h-full top-0 left-0 z-0"></div>
 
-      <div className="w-full h-20 border-t-4 border-red-600 rounded-t-full"></div>
+      <div className="w-full border border-red-600"></div>
     </section>
   );
 }
