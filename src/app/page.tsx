@@ -1,4 +1,4 @@
-import { Hero, Reasons, Trending } from '@/components';
+import { Hero, Reasons, Trending, Frequently, Footer } from '@/components';
 
 export default function Home() {
   return (
@@ -8,6 +8,10 @@ export default function Home() {
       <Trending />
 
       <Reasons />
+
+      <Frequently />
+
+      <Footer />
     </>
   );
 }
