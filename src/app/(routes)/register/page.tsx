@@ -1,4 +1,5 @@
 import { Netflix } from '@/icons';
+import { FormRegister } from '@/(routes)/register/components';
 
 export default function Register() {
   return (
@@ -9,7 +10,7 @@ export default function Register() {
         <div className="w-[500px] h-[750px] bg-black bg-opacity-90 flex flex-col p-16 z-50">
           <h2 className="text-white font-semibold text-3xl">Register</h2>
 
-          <form className="flex flex-col gap-4"></form>
+          <FormRegister />
         </div>
       </div>
 
