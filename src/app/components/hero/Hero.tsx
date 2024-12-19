@@ -1,8 +1,13 @@
+'use client';
+
 import { Netflix, ArrowRight } from '@/icons';
 import { Button, Input, P } from '@/components';
 import Link from 'next/link';
+import { useForm } from 'react-hook-form';
 
 export function Hero() {
+  const { register } = useForm();
+
   return (
     <section className='w-full h-[900px] bg-cover bg-center bg-no-repeat bg-[url("/hero.jpg")] relative'>
       <div className="flex flex-col mx-auto max-w-[1524px] w-full h-full gap-28">
@@ -32,7 +37,13 @@ export function Hero() {
           <div className="flex flex-col items-center gap-2">
             <P />
             <div className="flex items-center gap-4 w-full">
-              <Input />
+              <Input
+                placeholder="Email address"
+                //register={register}
+                error="Email address is required"
+                regex={/.+@.+\..+/}
+                type="email"
+              />
               <Button
                 label="Login"
                 className="px-2 py-2 flex items-center justify-center gap-2 h-[60px] w-[300px] text-xl"
