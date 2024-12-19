@@ -1,4 +1,4 @@
-import { Hero, Trending } from '@/components';
+import { Hero, Reasons, Trending } from '@/components';
 
 export default function Home() {
   return (
@@ -6,6 +6,8 @@ export default function Home() {
       <Hero />
 
       <Trending />
+
+      <Reasons />
     </>
   );
 }
