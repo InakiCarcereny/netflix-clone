@@ -1,6 +1,6 @@
 import { Netflix, ArrowRight } from '@/icons';
-import { BUTTONS } from '@/lib';
-import { Button } from '@/components';
+import { Button, Input, P } from '@/components';
+import Link from 'next/link';
 
 export function Hero() {
   return (
@@ -11,13 +11,12 @@ export function Hero() {
             <Netflix />
           </h1>
           <div className="flex items-center gap-4">
-            {/* {BUTTONS.map((button) => (
-            <button key={button.label}>{button.label}</button>
-          ))} */}
             <button className="rounded-md border border-zinc-300 bg-transparent px-4 py-2 text-sm w-full placeholder:text-zinc-300 text-white font-semibold">
               Translate
             </button>
-            <Button label="Sign in" className="w-full px-4 py-2 text-sm" />
+            <Link href={'/register'} className="w-[150px]">
+              <Button label="Sign in" className="w-full px-4 py-2 text-sm" />
+            </Link>
           </div>
         </header>
 
@@ -31,16 +30,9 @@ export function Hero() {
             </span>
           </div>
           <div className="flex flex-col items-center gap-2">
-            <p className="text-white">
-              Ready to watch? Enter your email to create or restart your
-              membership.
-            </p>
+            <P />
             <div className="flex items-center gap-4 w-full">
-              <input
-                type="text"
-                className="rounded-md border border-zinc-300 px-3 py-4 w-full placeholder:text-zinc-300 bg-[#1e1e1e]/40"
-                placeholder="Email address"
-              />
+              <Input />
               <Button
                 label="Login"
                 className="px-2 py-2 flex items-center justify-center gap-2 h-[60px] w-[300px] text-xl"
