@@ -4,10 +4,10 @@ import { Cross, Plus } from '@/icons';
 import { QUESTIONS } from '@/lib';
 import { useState } from 'react';
 
-export function QuestionsList() {
+export function QuestionsList(): JSX.Element {
   const [open, setOpen] = useState<boolean | string>(false);
 
-  const handleOpen = (question: string) => {
+  const handleOpen = (question: string): void => {
     setOpen((prevState) => (prevState === question ? false : question));
   };
 
